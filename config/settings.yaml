@@ -1,0 +1,30 @@
+# A-1 Financial Data Engine 설정 (docs/DESIGN.md 기준)
+company: 삼성전자
+# T2: FY2025 단일연도 → T3: [2021, 2022, 2023, 2024, 2025]
+years: [2025]
+reprt_code: "11011"      # 사업보고서만 (D-01)
+fs_div: CFS              # 연결만. 없으면 OFS 호출 없이 검토 대상 (D-02)
+tolerance: 0             # 회계 검증 허용오차 (원본 단위)
+corp_cache_max_age_days: 7
+paths:
+  data: data
+  output: output
+  logs: logs
+  account_map: config/account_map.csv
+# 사용자 스팟체크 목록 (Validation ⑤). (sj_div, account_id) 는 FY2025 실제 응답에서 확인한 ID.
+spot_check:
+  - [BS, ifrs-full_Assets]
+  - [BS, ifrs-full_Liabilities]
+  - [BS, ifrs-full_Equity]
+  - [BS, ifrs-full_EquityAttributableToOwnersOfParent]
+  - [BS, ifrs-full_CashAndCashEquivalents]
+  - [IS, ifrs-full_Revenue]
+  - [IS, ifrs-full_CostOfSales]
+  - [IS, ifrs-full_GrossProfit]
+  - [IS, dart_OperatingIncomeLoss]
+  - [IS, ifrs-full_ProfitLoss]
+  - [IS, ifrs-full_ProfitLossAttributableToOwnersOfParent]
+  - [CF, ifrs-full_CashFlowsFromUsedInOperatingActivities]
+  - [CF, ifrs-full_CashFlowsFromUsedInInvestingActivities]
+  - [CF, ifrs-full_CashFlowsFromUsedInFinancingActivities]
+  - [CF, dart_CashAndCashEquivalentsAtEndOfPeriodCf]

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fde"
+version = "0.1.0"
+description = "A-1 Financial Data Engine (OpenDART 연결재무제표 수집·검증)"
+requires-python = ">=3.11"
+dependencies = ["requests>=2.31", "pydantic>=2.6", "openpyxl>=3.1", "PyYAML>=6.0"]
+
+[project.scripts]
+fde = "fde.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

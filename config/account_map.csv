@@ -1,0 +1,20 @@
+sj_div,account_id,item,verified,note
+BS,ifrs-full_Assets,total_assets,FY2025,V1 자산총계
+BS,ifrs-full_Liabilities,total_liabilities,FY2025,V1 부채총계
+BS,ifrs-full_Equity,total_equity,FY2025,V1/V2 자본총계
+BS,ifrs-full_EquityAttributableToOwnersOfParent,equity_parent,FY2025,V2 지배기업 소유주지분
+BS,ifrs-full_NoncontrollingInterests,equity_nci,FY2025,V2 비지배지분
+BS,ifrs-full_CashAndCashEquivalents,cash_bs,FY2025,V5 재무상태표 현금및현금성자산
+IS,ifrs-full_Revenue,revenue,FY2025,V3 매출액
+IS,ifrs-full_CostOfSales,cost_of_sales,FY2025,V3 매출원가
+IS,ifrs-full_GrossProfit,gross_profit,FY2025,V3 매출총이익
+IS,ifrs-full_ProfitLoss,profit_is,FY2025,V6 손익계산서 당기순이익
+CIS,ifrs-full_Revenue,revenue,N,V3 (단일 포괄손익계산서인 경우) — 삼성전자 FY2025 CIS 에 없음
+CIS,ifrs-full_CostOfSales,cost_of_sales,N,V3 (단일 포괄손익계산서인 경우) — 삼성전자 FY2025 CIS 에 없음
+CIS,ifrs-full_GrossProfit,gross_profit,N,V3 (단일 포괄손익계산서인 경우) — 삼성전자 FY2025 CIS 에 없음
+CIS,ifrs-full_ProfitLoss,profit_cis,FY2025,V6 포괄손익계산서 당기순이익
+CF,dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,cash_begin,FY2025,V4 기초현금
+CF,dart_CashAndCashEquivalentsAtEndOfPeriodCf,cash_end,FY2025,V4/V5 기말현금
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges,cash_change,N,V4 현금증감(환율효과 전) — 삼성전자 FY2025 응답에 없음 (사용자 판단 필요)
+CF,ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,cash_fx_effect,FY2025,V4 환율변동효과
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,cash_change_total,FY2025,V4 현금증감(환율효과 포함) — 환율효과 전 증감이 없을 때 사용 (D-16)

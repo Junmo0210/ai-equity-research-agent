@@ -8,3 +8,4 @@ data/
 output/
 logs/
 ~$*.xlsx
+*.egg-info/
